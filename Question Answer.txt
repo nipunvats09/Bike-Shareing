@@ -1,0 +1,61 @@
+
+Assignment-based Subjective Questions
+
+
+Q. From your analysis of the categorical variables from the dataset, what could you infer about their effect on the dependent variable?
+Answer: 1. Between month Jun to Sept, bike demand is high. Jan has the lowest demand.
+2. Bike demand is similar throughout the weekdays.
+3. There is no significance change in bike demand with working and non working days.
+4. Bike demand is less in spring season compared to other seasons.
+
+Q. Why is it important to use drop_first=True during dummy variable creation?
+Answer: It basically help reducing the extra column created during dummery variable creation. Which can
+ultimately reduce the complexity of the model.
+
+Q.Looking at the pair-plot among the numerical variables, which one has the highest correlation
+with the target variable?
+Answer: "atemp"
+
+
+General Subjective Questions
+
+
+Q. Explain the linear regression algorithm in detail?
+Answer. Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task.
+Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship 
+between variables and forecasting. Different regression models differ based on – the kind of relationship between dependent and 
+independent variables they are considering, and the number of independent variables getting used.
+
+Q.Explain the Anscombe’s quartet in detail?
+Answer. It can be defined as the group of 4 dataset which are almost identical in simple descriptive statistics, but there are 
+some unusual feature in the dataset that fools the regression model if built. They have very different distributions and
+appear different in scatter plot.
+
+Q. What is Pearson’s R?
+Answer. In Statistics, the Pearson's Correlation Coefficient is also referred to as Pearson's r, the Pearson product-moment 
+correlation coefficient, or bivariate correlation. It is a statistic that measures the linear correlation between two variables. 
+Like all correlations, it also has a numerical value that lies between -1.0 and +1.0. 
+Whenever we discuss correlation in statistics, it is generally Pearson's correlation coefficient. However, it cannot capture nonlinear 
+relationships between two variables and cannot differentiate between dependent and independent variables.
+
+Q. What is scaling? Why is scaling performed? What is the difference between normalized scaling
+and standardized scaling?
+Answer.It is a step of data Pre-Processing which is applied to independent variables to normalize the data within a particular range.
+It also helps in speeding up the calculations in an algorithm.
+It is applied because:
+Most of the times, collected data set contains features highly varying in magnitudes, units and range. If scaling is not done then algorithm 
+only takes magnitude in account and not units hence incorrect modelling. To solve this issue, we have to do scaling to bring all the variables
+ to the same level of magnitude.
+It is important to note that scaling just affects the coefficients and none of the other parameters like t-statistic, F-statistic, p-values,
+ R-squared, etc.
+
+Q.You might have observed that sometimes the value of VIF is infinite. Why does this happen?
+Answer. If it is infinite the this shows that a perfect correlation between two independent variables. In the case of perfect correlation,
+ we get R2 =1, which lead to 1/(1-R2) infinity. To solve this problem we need to drop one of the variables from the dataset which is causing 
+this perfect multicollinearity.
+
+Q.What is a Q-Q plot? Explain the use and importance of a Q-Q plot in linear regression?
+Answer. Q-Q Plots (Quantile-Quantile plots) are plots of two quantiles against each other. A quantile is a fraction where certain values fall 
+below that quantile. For example, the median is a quantile where 50% of the data fall below that point and 50% lie above it. The purpose of Q-Q 
+plots is to find out if two sets of data come from the same distribution. A 45 degree angle is plotted on the Q Q plot; if the two data sets come 
+from a common distribution, the points will fall on that reference line.
